@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head> 
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebApp week 2</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
     <div class="menu-layout">
-    <h1>Hello World!</h1>
+      <h1>Hello World!</h1>
 
-    <div>
-      <table id="menu-table">
-        <tr>
-          <th>Name</th>
-          <th>Price</th>
-        </tr>
-        <tr>
-          <td>Chicken & rice</td>
-          <td>6.50 eur</td>
-        </tr>
-        <tr>
-          <td>Tuna pasta</td>
-          <td>5.50 eur</td>
-        </tr>
-        <tr>
-          <td>Nisti-stew</td>
-          <td>4.00 eur</td>
-        </tr>
-        <tr>
-          <td>White bread & water</td>
-          <td>1.15 eur</td>
-        </tr>
-        <tr>
-          <td>Pint of beer</td>
-          <td>3.00 eur</td>
-        </tr>
-      </table>
+      <div>
+        <table id="menu-table">
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Chicken & rice</td>
+            <td>6.50 eur</td>
+          </tr>
+          <tr>
+            <td>Tuna pasta</td>
+            <td>5.50 eur</td>
+          </tr>
+          <tr>
+            <td>Nisti-stew</td>
+            <td>4.00 eur</td>
+          </tr>
+          <tr>
+            <td>White bread & water</td>
+            <td>1.15 eur</td>
+          </tr>
+          <tr>
+            <td>Pint of beer</td>
+            <td>3.00 eur</td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <ul id="unordered-list"></ul>
+
+        <label for="rating">Rate the restaurant:</label>
+        <select name="rating" id="rating">
+          <option value="1">2 stars</option>
+          <option value="2">3 stars</option>
+          <option value="3">4 stars</option>
+          <option value="4">5 stars</option>
+        </select>
+        <br />
+
+        <textarea id="text-area" rows="4" cols="27"></textarea>
+        <br />
+        <button id="add-comment">Add comment</button>
+        <button id="remove-comments">Remove comments</button>
+
+        <p id="list-clear"></p>
+      </div>
+      <script src="index.js"></script>
     </div>
-
-    <div>
-      <ul id="unordered-list">
-      </ul>
-
-      <textarea id="text-area" rows="4" cols="27"></textarea>
-      <br />
-      <button id="add-comment" /> Add comment </button>
-      <button id="remove-comments" > Remove comments </button>
-
-      <p id="list-clear"></p>
-    </div>
-    <script src="index.js"></script>
-  </div>
   </body>
 </html>

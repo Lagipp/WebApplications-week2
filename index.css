@@ -8,14 +8,23 @@ body {
   width: 100%;
 }
 
+#menu-table tr:nth-of-type(2n) {
+  background-color: gainsboro;
+}
+
 #menu-table th {
+  background-color: grey;
   color: #001008;
   padding-top: 5px;
   padding-bottom: 4px;
 }
 
-.meny-layout {
+.menu-layout {
   text-align: center;
   max-width: 740px;
   margin: auto;
+}
+
+#rating {
+  margin: 4px;
 }

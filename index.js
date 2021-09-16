@@ -5,6 +5,7 @@ const addCommentsButton = document.getElementById("add-comment");
 addCommentsButton.addEventListener("click", function () {
   const uList = document.getElementById("unordered-list");
   const textArea = document.getElementById("text-area");
+  const userRating = document.getElementById("rating");
 
   // https://www.w3schools.com/jsref/prop_textarea_value.asp
 
