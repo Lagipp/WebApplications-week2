@@ -1,0 +1,21 @@
+body {
+  font-family: Garamond;
+}
+
+#menu-table {
+  background-color: #f2f2f2;
+  text-align: left;
+  width: 100%;
+}
+
+#menu-table th {
+  color: #001008;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+.meny-layout {
+  text-align: center;
+  max-width: 740px;
+  margin: auto;
+}
