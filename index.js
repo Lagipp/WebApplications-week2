@@ -1,17 +1,3 @@
-/*
-if (document.readyState !== "loading") {
-  console.log("Document is ready");
-  intializeCode();
-} else {
-  document.addEventListener("DOM content loaded", function () {
-    console.log("Document ready after waiting!");
-    intializeCode();
-  });
-}
-
-function intializeCode() {
-*/
-
 console.log("Hello world!");
 
 const addCommentsButton = document.getElementById("add-comment");
