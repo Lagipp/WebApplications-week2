@@ -2,6 +2,10 @@ body {
   font-family: Garamond;
 }
 
+.header {
+  font-style: italic;
+}
+
 #menu-table {
   background-color: #f2f2f2;
   text-align: left;
