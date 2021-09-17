@@ -3,22 +3,34 @@ console.log("Hello world!");
 const addCommentsButton = document.getElementById("add-comment");
 
 addCommentsButton.addEventListener("click", function () {
-  //const uList = document.getElementById("unordered-list");
   const textArea = document.getElementById("text-area");
   const userRating = document.getElementById("rating");
 
-  // https://www.w3schools.com/jsref/prop_textarea_value.asp
-
   let input = textArea.value;
+  let grade = userRating.value;
+
+  //const uList = document.getElementById("unordered-list");
   //let newListItem = document.createElement("li");
   //newListItem.innerHTML = input;
-
   //uList.appendChild(newListItem);
 
   let newDiv = document.createElement("div");
-  let newContent = document.createTextNode(userRating, input);
+  newDiv.className = "comment";
 
-  newDiv.appendChild(newContent);
+  let divChildRating = document.createElement("div");
+  divChildRating.className = "comment-rating";
+
+  let divChildText = document.createElement("div");
+  divChildText.className = "comment-text";
+
+  let ratingTextNode = document.createTextNode(grade);
+  let inputTextNode = document.createTextNode(input);
+
+  divChildRating.appendChild(ratingTextNode);
+  divChildText.appendChild(inputTextNode);
+
+  newDiv.appendChild(divChildRating);
+  newDiv.appendChild(divChildText);
 });
 
 const addRemoveCommentsButton = document.getElementById("remove-comments");
