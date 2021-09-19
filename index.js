@@ -7,9 +7,12 @@ addCommentsButton.addEventListener("click", function () {
   const userRating = document.getElementById("rating");
 
   let input = textArea.value;
-  let grade = userRating.value;
+  let grade = userRating.options[userRating.selectedIndex].text;
 
-  //const uList = document.getElementById("unordered-list");
+  //https://stackoverflow.com/questions/14976495/get-selected-option-text-with-javascript
+
+  const uList = document.getElementById("unordered-list");
+
   //let newListItem = document.createElement("li");
   //newListItem.innerHTML = input;
   //uList.appendChild(newListItem);
@@ -29,8 +32,10 @@ addCommentsButton.addEventListener("click", function () {
   divChildRating.appendChild(ratingTextNode);
   divChildText.appendChild(inputTextNode);
 
-  newDiv.appendChild(divChildRating);
   newDiv.appendChild(divChildText);
+  newDiv.appendChild(divChildRating);
+
+  uList.appendChild(newDiv);
 });
 
 const addRemoveCommentsButton = document.getElementById("remove-comments");
